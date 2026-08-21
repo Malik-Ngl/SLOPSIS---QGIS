@@ -1,4 +1,4 @@
-# SLOPSIS---QGIS
+# SLOPSIS-QGIS
 SLOPSIS is a QGIS plugin developed to perform slope stability analysis directly within a GIS environment, using Bishop's Simplified Method as its core limit-equilibrium formulation. The plugin integrates terrain data, geotechnical parameters, and statistical analysis into a single automated workflow, consisting of two main stages:
 
 1. Deterministic Grid Search — The plugin extracts a 2D ground surface profile along a user-defined cross-section line from a Digital Elevation Model (DEM), then systematically searches a grid of trial circular slip surface centers and radii. Each candidate surface is validated against geometric and physical criteria (entry/exit points on the ground surface, minimum span, minimum depth, and boundary constraints) before its Factor of Safety (FK) is computed via the iterative Bishop Simplified equation. The candidate with the lowest valid FK is selected as the critical slip surface.
