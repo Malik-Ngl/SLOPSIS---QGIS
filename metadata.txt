@@ -1,0 +1,46 @@
+# This file contains metadata for your plugin.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=SLOPSIS
+qgisMinimumVersion=3.0
+description=A Plugin for slope stability analysis using Bishop's Simplified Method  with Monte Carlo Simulation
+version=0.1
+author=M. Abdul Malik Nainggolan
+email=abdulmaliknainggolan2@gmail.com
+
+about= SLOPSIS is a QGIS plugin developed to perform slope stability analysis directly within a GIS environment, using Bishop's Simplified Method as its core limit-equilibrium formulation. The plugin integrates terrain data, geotechnical parameters, and statistical analysis into a single automated workflow, consisting of two main stages: 1.Deterministic Grid Search — The plugin extracts a 2D ground surface profile along a user-defined cross-section line from a Digital Elevation Model (DEM), then systematically searches a grid of trial circular slip surface centers and radii. Each candidate surface is validated against geometric and physical criteria (entry/exit points on the ground surface, minimum span, minimum depth, and boundary constraints) before its Factor of Safety (FK) is computed via the iterative Bishop Simplified equation. The candidate with the lowest valid FK is selected as the critical slip surface. 2.Probabilistic Monte Carlo Analysis — Using the critical slip surface identified in the grid search, the plugin performs Monte Carlo simulation by resampling unit weight (γ), cohesion (c'), and friction angle (φ') from normal distributions defined by their mean and coefficient of variation (COV), consistent with RocScience Slide 6.0 conventions. This produces a distribution of FK values, from which the mean FK, standard deviation, reliability index (β), and probability of failure (Pf) are derived. The plugin outputs an integrated visualization showing the critical slip surface, ground profile, and a statistical summary panel, along with automatic qualitative interpretation of slope stability status (based on FK), risk level (based on Pf), and reliability category (based on β). SLOPSIS has been validated against RocScience Slide 6.0 and published literature cases, showing strong agreement in both deterministic FK values and Monte Carlo-based reliability statistics.
+tracker=https://github.com/Malik-Ngl/SLOPSIS---QGIS
+repository=https://github.com/Malik-Ngl/SLOPSIS---QGIS
+# End of mandatory metadata
+
+# Recommended items:
+
+hasProcessingProvider=no
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=python
+
+homepage=https://github.com/Malik-Ngl/SLOPSIS---QGIS
+category=Plugins
+icon=icon.png
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
+# Since QGIS 3.8, a comma separated list of plugins to be installed
+# (or upgraded) can be specified.
+# Check the documentation for more information.
+# plugin_dependencies=
+
+Category of the plugin: Raster, Vector, Database or Web
+# category=
+
+# If the plugin can run on QGIS Server.
+server=False
+
