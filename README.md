@@ -35,4 +35,7 @@ The plugin outputs an integrated visualization showing the critical slip surface
 9. Optionally, add a Cross Section 2 tab (or more) with different soil parameters and a different cross-section line, using either a preset or a custom iteration count (e.g. 1,500x) — this lets the plugin analyse multiple slope cross-sections in a single run. Once all tabs are filled in, click Calculate to run the analysis.<img width="1025" height="708" alt="Screenshot 2026-09-08 105135" src="https://github.com/user-attachments/assets/2b7c65ea-28eb-43d5-89cc-185b38faa5da" />
 
 10. The result
-<imgwidth="553" height="512" alt="Screenshot 2026-09-08 105420" src="https://github.com/user-attachments/assets/9b716d9f-95b9-435a-8c4c-0e5efc2e38db" /><img width="1440" height="864" alt="Screenshot 2026-09-08 105429" src="https://github.com/user-attachments/assets/e27ca43e-47d5-4ef1-b6fd-1c3a20fb66b5" />
+<img width="553" height="512" alt="Screenshot 2026-09-08 105420" src="https://github.com/user-attachments/assets/5bf8c446-49c6-4e09-8a1e-7c39b9348503" />
+<img width="1440" height="864" alt="Screenshot 2026-09-08 105429" src="https://github.com/user-attachments/assets/8e1da2ff-1352-4657-86be-fee576e4532a" />
+<img width="1440" height="864" alt="Screenshot 2026-09-08 105436" src="https://github.com/user-attachments/assets/498de13d-2c72-4df7-b81b-6ef813ac6915" />
+
